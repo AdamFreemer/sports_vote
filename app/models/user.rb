@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-  has_many :plays
   has_many :reviews
+  belongs_to :user_type
 end
