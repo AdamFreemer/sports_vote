@@ -1,0 +1,2 @@
+class PlayType < ApplicationRecord
+end
