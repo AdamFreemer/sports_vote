@@ -25,8 +25,12 @@ ActiveRecord::Schema.define(version: 20171222015850) do
     t.string "name"
     t.integer "game_type_id"
     t.datetime "game_time"
+    t.bigint "team_one_id"
+    t.bigint "team_two_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["team_one_id"], name: "index_games_on_team_one_id"
+    t.index ["team_two_id"], name: "index_games_on_team_two_id"
   end
 
   create_table "leagues", force: :cascade do |t|

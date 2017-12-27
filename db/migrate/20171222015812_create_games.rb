@@ -4,9 +4,8 @@ class CreateGames < ActiveRecord::Migration[5.1]
       t.string :name
       t.integer :game_type_id
       t.datetime :game_time
-      t.string :name
-      t.string :name
-      t.string :name
+      t.references :team_one
+      t.references :team_two
       t.timestamps
     end
   end
