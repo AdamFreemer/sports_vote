@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Agree:</strong>
+  <%= @review.agree %>
+</p>
+
+<p>
+  <strong>Confidence:</strong>
+  <%= @review.confidence %>
+</p>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>
