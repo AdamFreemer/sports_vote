@@ -13,8 +13,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.0.0.beta3'
 
 
 group :development, :test do
