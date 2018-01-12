@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.4'
+ruby '2.4.0'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
-
+gem "select2-rails"
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'

@@ -6,18 +6,13 @@
 </p>
 
 <p>
-  <strong>Game title:</strong>
-  <%= @game.game_title %>
-</p>
-
-<p>
   <strong>Team one:</strong>
-  <%= @game.team_one %>
+  <%= @game.team_one.name %>
 </p>
 
 <p>
   <strong>Team two:</strong>
-  <%= @game.team_two %>
+  <%= @game.team_two.name %>
 </p>
 
 <%= link_to 'Edit', edit_game_path(@game) %> |

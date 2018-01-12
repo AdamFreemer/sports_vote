@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= form.label :team_one %>
-    <%= form.text_field :team_one, id: :game_team_one %>
+    <%= collection_select(:team_one, :team_id, Team.all, :id, :name) %>
   </div>
 
   <div class="field">
     <%= form.label :team_two %>
-    <%= form.text_field :team_two, id: :game_team_two %>
+    <%= collection_select(:team_two, :team_id, Team.all, :id, :name) %>
   </div>
 
   <div class="actions">
