@@ -1,4 +1,4 @@
-<%= form_with(model: game, local: true) do |form| %>
+<%= simple_form_for @game do |form| %>
   <% if game.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(game.errors.count, "error") %> prohibited this game from being saved:</h2>
@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= form.label :team_one %>
-    <%= collection_select(:team_one_id, Team.all, {}, :name, {}) %>
+    <%= form.input :team_one_id, collection: Team.all %>
   </div>
 
   <div class="field">
     <%= form.label :team_two %>
-    <%= collection_select(:team_two_id, Team.all, {}, :name, {}) %>
+    <%= form.input :team_two_id, collection: Team.all %>
   </div>
 
   <div class="actions">
