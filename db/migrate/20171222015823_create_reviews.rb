@@ -5,6 +5,9 @@ class CreateReviews < ActiveRecord::Migration[5.1]
       t.integer :confidence
       t.integer :user_id
       t.integer :play_id
+      t.string :address
+      t.float :latitude
+      t.float :longitude
       t.timestamps
     end
   end

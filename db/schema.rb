@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(version: 20180104050909) do
   create_table "games", force: :cascade do |t|
     t.string "name"
     t.integer "game_type_id"
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "game_time"
     t.bigint "team_one_id"
     t.bigint "team_two_id"
@@ -61,6 +64,9 @@ ActiveRecord::Schema.define(version: 20180104050909) do
     t.integer "confidence"
     t.integer "user_id"
     t.integer "play_id"
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -109,8 +115,9 @@ ActiveRecord::Schema.define(version: 20180104050909) do
   create_table "venues", force: :cascade do |t|
     t.string "name"
     t.integer "game_id"
-    t.decimal "lat"
-    t.decimal "long"
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

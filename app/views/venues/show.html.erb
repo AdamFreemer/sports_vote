@@ -1,18 +1,30 @@
 <p id="notice"><%= notice %></p>
 
+<% if Rails.env.development? %>
+  <iframe
+  style="margin-top:10px"
+  width="100%"
+  height="400"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/search?key=<%= CONFIG_API["google_maps"] %>&q=<%= @venue.name %>&zoom=13&q=diner&center=<%= @venue.latitude %>,<%= @venue.longitude %>">
+  </iframe>
+<% else %>
+  <iframe
+  style="margin-top:10px"
+  width="100%"
+  height="400"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/search?key=<%= ENV["GOOGLE_API_KEY"] %>&q=<%= @venue.name %>&zoom=13&q=diner&center=<%= @venue.latitude %>,<%= @venue.longitude %>">
+  </iframe>
+<% end %>
+
 <p>
   <strong>Name:</strong>
   <%= @venue.name %>
 </p>
-
 <p>
-  <strong>Lat:</strong>
-  <%= @venue.lat %>
-</p>
-
-<p>
-  <strong>Long:</strong>
-  <%= @venue.long %>
+  <strong>Address:</strong>
+  <%= @venue.address %>
 </p>
 
 <%= link_to 'Edit', edit_venue_path(@venue) %> |

@@ -2,7 +2,6 @@
   <% if venue.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(venue.errors.count, "error") %> prohibited this venue from being saved:</h2>
-
       <ul>
       <% venue.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -10,22 +9,14 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name, id: :venue_name %>
   </div>
-
   <div class="field">
-    <%= form.label :lat %>
-    <%= form.text_field :lat, id: :venue_lat %>
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :venue_address %>
   </div>
-
-  <div class="field">
-    <%= form.label :long %>
-    <%= form.text_field :long, id: :venue_long %>
-  </div>
-
   <div class="actions">
     <%= form.submit %>
   </div>
