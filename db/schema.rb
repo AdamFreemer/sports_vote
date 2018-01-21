@@ -30,10 +30,12 @@ ActiveRecord::Schema.define(version: 20180104050909) do
     t.datetime "game_time"
     t.bigint "team_one_id"
     t.bigint "team_two_id"
+    t.bigint "venue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["team_one_id"], name: "index_games_on_team_one_id"
     t.index ["team_two_id"], name: "index_games_on_team_two_id"
+    t.index ["venue_id"], name: "index_games_on_venue_id"
   end
 
   create_table "leagues", force: :cascade do |t|
@@ -114,7 +116,6 @@ ActiveRecord::Schema.define(version: 20180104050909) do
 
   create_table "venues", force: :cascade do |t|
     t.string "name"
-    t.integer "game_id"
     t.string "address"
     t.float "latitude"
     t.float "longitude"

@@ -4,15 +4,21 @@
   <strong>Name:</strong>
   <%= @game.name %>
 </p>
-
 <p>
-  <strong>Team one:</strong>
+  <strong>Team 1:</strong>
   <%= @game.team_one.name %>
 </p>
-
 <p>
-  <strong>Team two:</strong>
+  <strong>Team2:</strong>
   <%= @game.team_two.name %>
+</p>
+<p>
+  <strong>Type:</strong>
+  <%= @game.game_type.name %>
+</p>
+<p>
+  <strong>Venue:</strong>
+  <%= @game.venue.name %>
 </p>
 
 <%= link_to 'Edit', edit_game_path(@game) %> |

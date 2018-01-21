@@ -1,3 +1,4 @@
+
 <%= simple_form_for @game do |form| %>
   <% if game.errors.any? %>
     <div id="error_explanation">
@@ -12,20 +13,26 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :name %><br>
     <%= form.text_field :name, id: :game_name %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :team_one %>
+    <%# form.label :team_one %>
     <%= form.input :team_one_id, collection: Team.all %>
   </div>
-
   <div class="field">
-    <%= form.label :team_two %>
+    <%# form.label :team_two %>
     <%= form.input :team_two_id, collection: Team.all %>
   </div>
-
+  <div class="field">
+    <%# form.label :venue %>
+    <%= form.input :venue_id, collection: Venue.all %>
+  </div>
+  <div class="field">
+    <%# form.label :game_type %>
+    <%= form.input :game_type_id, collection: GameType.all %>
+  </div>
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -9,6 +9,7 @@ class CreateGames < ActiveRecord::Migration[5.1]
       t.datetime :game_time
       t.references :team_one
       t.references :team_two
+      t.references :venue
       t.timestamps
     end
   end
