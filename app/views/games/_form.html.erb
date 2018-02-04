@@ -11,12 +11,6 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :name %><br>
-    <%= form.text_field :name, id: :game_name %>
-  </div>
-  <br>
   <div class="field">
     <%# form.label :team_one %>
     <%= form.input :team_one_id, collection: Team.all %>
@@ -33,6 +27,16 @@
     <%# form.label :game_type %>
     <%= form.input :game_type_id, collection: GameType.all %>
   </div>
+  <div class="field">
+    <%# form.label :game_type %>
+    <%= form.input :rink_id, collection: Rink.all, label: 'Arena' %>
+  </div>
+  <div class="field" style="width: 500px">
+    <%# form.label :game_type %>
+    <%= form.datetime_select :game_time %>
+  </div>
+
+  <br>
   <div class="actions">
     <%= form.submit %>
   </div>

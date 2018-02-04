@@ -10,6 +10,7 @@ class CreateGames < ActiveRecord::Migration[5.1]
       t.references :team_one
       t.references :team_two
       t.references :venue
+      t.references :rink
       t.timestamps
     end
   end

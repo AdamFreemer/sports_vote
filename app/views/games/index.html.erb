@@ -6,6 +6,7 @@
       <tr>
         <th>Name</th>
         <th>Venue</th>
+        <th>Arena</th>
         <th>Game Type</th>
         <th>Team 1</th>
         <th>Team 2</th>
@@ -15,11 +16,12 @@
     <tbody>
       <% @games.each do |game| %>
         <tr>
-          <td><%= game.name %></td>
-          <td><%= game.venue.name %></td>
-          <td><%= game.game_type.name %></td>
-          <td><%= game.team_one.name %></td>
-          <td><%= game.team_two.name %></td>
+          <td><%= game&.name %></td>
+          <td><%= game.venue&.name %></td>
+          <td><%= game.rink.name %></td>
+          <td><%= game.game_type&.name %></td>
+          <td><%= game.team_one&.name %></td>
+          <td><%= game.team_two&.name %></td>
           <td><%= link_to 'Show', game %></td>
           <td><%= link_to 'Edit', edit_game_path(game) %></td>
           <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>

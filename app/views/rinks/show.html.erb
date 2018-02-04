@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @rink.name %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @rink.note %>
+</p>
+
+<%= link_to 'Edit', edit_rink_path(@rink) %> |
+<%= link_to 'Back', rinks_path %>

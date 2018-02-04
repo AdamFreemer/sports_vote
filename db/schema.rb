@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180104050909) do
+ActiveRecord::Schema.define(version: 20180124014151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,8 +31,10 @@ ActiveRecord::Schema.define(version: 20180104050909) do
     t.bigint "team_one_id"
     t.bigint "team_two_id"
     t.bigint "venue_id"
+    t.bigint "rink_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["rink_id"], name: "index_games_on_rink_id"
     t.index ["team_one_id"], name: "index_games_on_team_one_id"
     t.index ["team_two_id"], name: "index_games_on_team_two_id"
     t.index ["venue_id"], name: "index_games_on_venue_id"
@@ -56,9 +58,10 @@ ActiveRecord::Schema.define(version: 20180104050909) do
   create_table "plays", force: :cascade do |t|
     t.string "name"
     t.integer "play_type_id"
-    t.integer "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "game_id"
+    t.index ["game_id"], name: "index_plays_on_game_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -69,6 +72,13 @@ ActiveRecord::Schema.define(version: 20180104050909) do
     t.string "address"
     t.float "latitude"
     t.float "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rinks", force: :cascade do |t|
+    t.string "name"
+    t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

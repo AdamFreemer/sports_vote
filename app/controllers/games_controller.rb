@@ -25,6 +25,7 @@ class GamesController < ApplicationController
   # POST /games.json
   def create
     @game = Game.new(game_params)
+    # binding.pry
 
     respond_to do |format|
       if @game.save
@@ -69,6 +70,6 @@ class GamesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def game_params
-      params.require(:game).permit(:name, :game_type_id, :venue_id, :team_one_id, :team_two_id)
+      params.require(:game).permit(:name, :game_type_id, :venue_id, :team_one_id, :team_two_id, :rink_id, :game_time)
     end
 end

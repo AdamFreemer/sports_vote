@@ -1,0 +1,22 @@
+<%= simple_form_for(@rink) do |f| %>
+  <% if rink.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rink.errors.count, "error") %> prohibited this rink from being saved:</h2>
+
+      <ul>
+        <% rink.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :note %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,5 +1,4 @@
 class Venue < ApplicationRecord
-  # belongs_to :league
   has_many :games
 
   geocoded_by :address   # can also be an IP address

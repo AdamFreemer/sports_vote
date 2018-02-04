@@ -9,68 +9,65 @@
 
 
 
-  <div class="container-fluid">
     <body>
-    <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right"
-              type="button" data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%= venues_path %>">Venues</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%= leagues_path %>">Leagues</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%= teams_path %>">Teams</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%= games_path %>">Games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%= game_types_path %>">Game Types</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%= reviews_path %>">Reviews</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%= users_path %>">< Admin Users ></a>
-          </li>
-        </ul>
-        <% if user_signed_in? %>
-          <ul class="navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><%= link_to("Profile", edit_user_registration_path) %></li>
-                <li><%= link_to("Logout", destroy_user_session_path, :method => :delete) %></li>
-              </ul>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right"
+                type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= venues_path %>">Venues</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= leagues_path %>">Leagues</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= teams_path %>">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= games_path %>">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= game_types_path %>">Game Types</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= reviews_path %>">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= rinks_path %>">Rinks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= users_path %>">< Admin Users ></a>
             </li>
           </ul>
-        <% else %>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to('Login', new_user_session_path) %></li>
-          </ul>
-        <% end %>
-    </div>
-    </nav>
-
-
-  <!--<p class="notice"><%# notice %></p>-->
-    <!--<p class="alert"><%# alert %></p>-->
+          <% if user_signed_in? %>
+            <ul class="navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to("Profile", edit_user_registration_path) %></li>
+                  <li><%= link_to("Logout", destroy_user_session_path, :method => :delete) %></li>
+                </ul>
+              </li>
+            </ul>
+          <% else %>
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to('Login', new_user_session_path) %></li>
+            </ul>
+          <% end %>
+        </div>
+      </nav>
       <%= yield %>
-
-
     </div>
   </body>
 </html>
