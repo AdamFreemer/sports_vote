@@ -2,60 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa46bf55-1b06-46a6-9bb1-2fb69bc0241f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change beforePath="$PROJECT_DIR$/.idea/sports_vote.iml" afterPath="$PROJECT_DIR$/.idea/sports_vote.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/game.rb" afterPath="$PROJECT_DIR$/app/models/game.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/play.rb" afterPath="$PROJECT_DIR$/app/models/play.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/venue.rb" afterPath="$PROJECT_DIR$/app/models/venue.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/games/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/games/_form.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/games/index.html.erb" afterPath="$PROJECT_DIR$/app/views/games/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/games/show.html.erb" afterPath="$PROJECT_DIR$/app/views/games/show.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222015812_create_games.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222015812_create_games.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222015817_create_plays.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222015817_create_plays.rb" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/game_types_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/games_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/leagues_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/play_types_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/plays_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/reviews_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/teams_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/user_types_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/venues_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/files/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/game_types.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/games.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/leagues.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/play_types.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/plays.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/reviews.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/teams.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/user_types.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/venues.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/helpers/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/game_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/game_type_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/league_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/play_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/play_type_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/review_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/team_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/user_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/user_type_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/venue_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/system/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -133,11 +82,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="games_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="games_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -202,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180104050909_add_devise_to_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
@@ -210,7 +188,6 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/main.js" />
         <option value="$PROJECT_DIR$/.pryrc" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -253,6 +230,8 @@
         <option value="$PROJECT_DIR$/app/views/games/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/games/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/games_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
       </list>
     </option>
   </component>
@@ -298,6 +277,19 @@
               <item name="sports_vote" type="b2602c69:ProjectViewProjectNode" />
               <item name="sports_vote" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_vote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_vote" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_vote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_vote" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -312,6 +304,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="games" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports_vote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports_vote" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sports_vote" type="b2602c69:ProjectViewProjectNode" />
@@ -676,12 +675,12 @@
       <workItem from="1517544660575" duration="2138000" />
       <workItem from="1517697792506" duration="628000" />
       <workItem from="1517701433627" duration="2000" />
-      <workItem from="1517702402082" duration="5700000" />
+      <workItem from="1517702402082" duration="7339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72487000" />
+    <option name="totallyTimeSpent" value="74126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -719,20 +718,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/game_types/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/leagues/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/play_types/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -946,14 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rinks/_rink.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1078,8 +1055,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding />
         </state>
       </provider>

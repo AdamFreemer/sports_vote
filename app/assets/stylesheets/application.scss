@@ -17,3 +17,6 @@
   */
   @import "bootstrap";
 
+.nav-link:focus, .nav-link:hover {
+  background-color: #eee;
+}
