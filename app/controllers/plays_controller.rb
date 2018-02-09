@@ -25,10 +25,11 @@ class PlaysController < ApplicationController
   # POST /plays.json
   def create
     @play = Play.new(play_params)
+    @play.name = PlayType.find(play_params[:play_type_id]).name
 
     respond_to do |format|
       if @play.save
-        format.html { redirect_to @play, notice: 'Play was successfully created.' }
+        format.html { redirect_to game_path(@play.game_id), notice: 'Play was successfully created.' }
         format.json { render :show, status: :created, location: @play }
       else
         format.html { render :new }
@@ -69,6 +70,6 @@ class PlaysController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def play_params
-      params.require(:play).permit(:name)
+      params.require(:play).permit(:name, :game_id, :play_type_id)
     end
 end

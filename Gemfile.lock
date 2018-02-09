@@ -76,6 +76,8 @@ GEM
     erubi (1.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    font-awesome-rails (4.7.0.3)
+      railties (>= 3.2, < 5.2)
     geocoder (1.4.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -216,6 +218,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   devise
+  font-awesome-rails
   geocoder
   jbuilder (~> 2.5)
   jquery-rails

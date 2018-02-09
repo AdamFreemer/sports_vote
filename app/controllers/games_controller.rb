@@ -25,7 +25,7 @@ class GamesController < ApplicationController
   # POST /games.json
   def create
     @game = Game.new(game_params)
-    # binding.pry
+    @game.name = game_name(@game)
 
     respond_to do |format|
       if @game.save
@@ -63,9 +63,16 @@ class GamesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_game
       @game = Game.find(params[:id])
+    end
+
+    def tighten(input)
+      input.split.map(&:capitalize).join(' ').gsub(/\s+/, "")
+    end
+
+    def game_name(game)
+      "#{tighten(game.team_one.name)}-#{tighten(game.team_two.name)}-#{tighten(game.venue.name)}-#{game.game_time.strftime('[%m-%d-%Y-%H:%M%Z]').to_s}"
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

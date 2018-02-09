@@ -16,19 +16,17 @@
     <tbody>
       <% @games.each do |game| %>
         <tr>
-          <td><%= game&.name %></td>
+          <td><%= link_to game&.name, game_path(game) %></td>
           <td><%= game.venue&.name %></td>
           <td><%= game.rink.name %></td>
           <td><%= game.game_type&.name %></td>
           <td><%= game.team_one&.name %></td>
           <td><%= game.team_two&.name %></td>
-          <td><%= link_to 'Show', game %></td>
-          <td><%= link_to 'Edit', edit_game_path(game) %></td>
-          <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to '', edit_game_path(game), class: 'fa fa-edit fa-2x' %></td>
+          <td><%= link_to '', game, method: :delete, data: { confirm: 'Are you sure?' }, class: 'fa fa-trash fa-2x' %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
   <br>
   <%= link_to 'New Game', new_game_path %>
-

@@ -9,7 +9,7 @@
   <%= @game.team_one.name %>
 </p>
 <p>
-  <strong>Team2:</strong>
+  <strong>Team 2:</strong>
   <%= @game.team_two.name %>
 </p>
 <p>
@@ -28,6 +28,36 @@
   <strong>Time:</strong>
   <%= @game.game_time.strftime('%A, %d %b %Y %l:%M %p') %>
 </p>
+
+<h2>Plays</h2>
+
+
+
+<% @game.plays.each do |play| %>
+  <p>
+  <div class="row">
+    <div class="col-4">
+      <%= link_to play.name, play_path(play), class: 'btn btn-outline-primary btn-block' %>
+    </div>
+  </div>
+  </p>
+
+
+<% end %>
+
+
+
+<h3>Add a play:</h3>
+<%= form_with(model: [ @game, @game.plays.build ], local: true) do |form| %>
+  <p>
+    <%= form.label 'Play Type' %>
+    <%= form.select :play_type_id, PlayType.all.collect {|p| [ p.name, p.id ] } %>
+    <%= form.hidden_field :game_id, value: @game.id %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
 
 <%= link_to 'Edit', edit_game_path(@game) %> |
 <%= link_to 'Back', games_path %>

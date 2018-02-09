@@ -14,6 +14,7 @@ gem 'puma', '~> 3.7'
 
 ## add-on gens
 gem 'devise'
+gem "font-awesome-rails"
 gem 'geocoder'
 gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'jbuilder', '~> 2.5'
@@ -23,6 +24,7 @@ gem "select2-rails"
 gem 'simple_form'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
