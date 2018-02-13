@@ -1,0 +1,28 @@
+<p>
+  <strong>Name:</strong>
+  <%= @game.name %>
+</p>
+<p>
+  <strong>Team 1:</strong>
+  <%= @game.team_one.name %>
+</p>
+<p>
+  <strong>Team 2:</strong>
+  <%= @game.team_two.name %>
+</p>
+<p>
+  <strong>Type:</strong>
+  <%= @game.game_type.name %>
+</p>
+<p>
+  <strong>Venue:</strong>
+  <%= @game.venue.name %>
+</p>
+<p>
+  <strong>Arena:</strong>
+  <%= @game.rink.name %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= @game.game_time.strftime('%A, %d %b %Y %l:%M %p') %>
+</p>

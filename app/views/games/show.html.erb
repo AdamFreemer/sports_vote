@@ -1,51 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @game.name %>
-</p>
-<p>
-  <strong>Team 1:</strong>
-  <%= @game.team_one.name %>
-</p>
-<p>
-  <strong>Team 2:</strong>
-  <%= @game.team_two.name %>
-</p>
-<p>
-  <strong>Type:</strong>
-  <%= @game.game_type.name %>
-</p>
-<p>
-  <strong>Venue:</strong>
-  <%= @game.venue.name %>
-</p>
-<p>
-  <strong>Arena:</strong>
-  <%= @game.rink.name %>
-</p>
-<p>
-  <strong>Time:</strong>
-  <%= @game.game_time.strftime('%A, %d %b %Y %l:%M %p') %>
-</p>
+<%= render 'show_game' %>
 
 <h2>Plays</h2>
-
-
-
 <% @game.plays.each do |play| %>
   <p>
-  <div class="row">
-    <div class="col-4">
-      <%= link_to "#{play.name} - #{play.created_at.strftime('%I:%M:%S %p')}", play_path(play), class: 'btn btn-outline-primary btn-block' %>
+    <div class="row">
+      <div class="col-4">
+        <%= link_to "#{play.name} - #{play.created_at.strftime('%I:%M:%S %p')}", play_path(play), class: 'btn btn-outline-primary btn-block' %>
+      </div>
+      <div class="col-1">
+        <%= link_to 'Delete', [play.game, play], method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger btn-block' %>
+      </div>
     </div>
-    <div class="col-1">
-      <%= link_to 'Delete', [play.game, play], method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger btn-block' %>
-    </div>
-
-  </div>
   </p>
-
 <% end %>
 
 <h3>Add a play:</h3>
