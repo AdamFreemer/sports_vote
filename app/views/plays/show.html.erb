@@ -22,9 +22,28 @@
 <h3>Add a review:</h3>
 <%= form_with(model: [ @play, @play.reviews.build ], local: true) do |form| %>
   <p>
-    <%= form.label 'Review Type' %>
-    <%= form.select :play_type_id, PlayType.all.collect {|p| [ p.name, p.id ] } %>
-    <%= form.hidden_field :game_id, value: @game.id %>
+    <%= label :agree, "Agree", value: true %>
+    <%= form.radio_button :agree, true, checked: true, value: true %>
+    <%= label :disagree, "Disagree", value: false %>
+    <%= form.radio_button :agree, false, value: false %>
+  </p>
+
+
+    <%= label :confidence, "Confidence", value: true %>
+
+  <p>
+    <%= label :confidence, "10", value: true %>
+    <%= form.radio_button :confidence, 10, checked: true, value: 10 %>
+
+    <%= label :confidence, "9", value: true %>
+    <%= form.radio_button :confidence, 9, checked: true, value: 9 %>
+  </p>
+
+  <p>
+    <%# form.label 'Review Type' %>
+
+    <%# form.select :play_type_id, PlayType.all.collect {|p| [ p.name, p.id ] } %>
+    <%# form.hidden_field :play_id, value: @play.id %>
   </p>
   <p>
     <%= form.submit %>
