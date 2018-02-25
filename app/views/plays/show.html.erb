@@ -33,7 +33,7 @@
 
   <p>
     <%= label :confidence, "10", value: true %>
-    <%= form.radio_button :confidence, 10, checked: true, value: 10 %>
+    <%= form.radio_button :confidence, 10, checked: true, value: 10 %>&nbsp;
 
     <%= label :confidence, "9", value: true %>
     <%= form.radio_button :confidence, 9, checked: true, value: 9 %>
@@ -43,7 +43,7 @@
     <%# form.label 'Review Type' %>
 
     <%# form.select :play_type_id, PlayType.all.collect {|p| [ p.name, p.id ] } %>
-    <%# form.hidden_field :play_id, value: @play.id %>
+    <% form.hidden_field :play_id, value: @play.id %>
   </p>
   <p>
     <%= form.submit %>

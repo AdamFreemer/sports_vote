@@ -10,6 +10,7 @@ class ReviewsController < ApplicationController
   # GET /reviews/1
   # GET /reviews/1.json
   def show
+
   end
 
   # GET /reviews/new
@@ -25,6 +26,8 @@ class ReviewsController < ApplicationController
   # POST /reviews.json
   def create
     @review = Review.new(review_params)
+    @review.user_id = current_user.id
+    @review.play_id = params[:play_id]
 
     respond_to do |format|
       if @review.save
