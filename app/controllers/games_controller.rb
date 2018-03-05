@@ -72,7 +72,7 @@ class GamesController < ApplicationController
     end
 
     def game_name(game)
-      "#{tighten(game.team_one.name)}-#{tighten(game.team_two.name)}-#{tighten(game.venue.name)}-#{game.game_time.strftime('[%m-%d-%Y-%H:%M%Z]').to_s}"
+      "#{tighten(game.team_one.name)} vs. #{tighten(game.team_two.name)} @ #{tighten(game.venue.name)}-#{game.game_time.strftime('[%m/%d/%Y-%l:%M %p]').to_s}"
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

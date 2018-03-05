@@ -10,7 +10,7 @@
         <%= link_to "#{play.name} - #{play.created_at.strftime('%I:%M:%S %p')}", play_path(play), class: 'btn btn-outline-primary btn-block' %>
       </div>
       <div class="col-1">
-        <%= link_to 'Delete', [play.game, play], method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger btn-block' %>
+        <%= link_to 'Delete', [play.game, play], method: :delete, class: 'btn btn-outline-danger btn-block' %>
       </div>
     </div>
   </p>

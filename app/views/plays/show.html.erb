@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @play.name %>
+<h2>Play: <%= "#{@play.name} @ #{@play.created_at.strftime('%I:%M:%S %p')}" %></h2>
 </p>
 
 <h2>Reviews</h2>
@@ -10,10 +9,10 @@
   <p>
   <div class="row">
     <div class="col-4">
-      <%= link_to "#{review.name} - #{review.created_at.strftime('%I:%M:%S %p')}", review_path(review), class: 'btn btn-outline-primary btn-block' %>
+      <%= link_to "Review @ #{review.created_at.strftime('%I:%M:%S %p')} | User says: #{review.agree}", review_path(review), class: 'btn btn-outline-primary btn-block' %>
     </div>
     <div class="col-1">
-      <%= link_to 'Delete', [review.play, review], method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger btn-block' %>
+      <%= link_to 'Delete', [review.play, review], method: :delete, class: 'btn btn-outline-danger btn-block' %>
     </div>
   </div>
   </p>
@@ -32,10 +31,13 @@
     <%= label :confidence, "Confidence", value: true %>
 
   <p>
-    <%= label :confidence, "10", value: true %>
+    <%= label :confidence, "High", value: true %>
     <%= form.radio_button :confidence, 10, checked: true, value: 10 %>&nbsp;
 
-    <%= label :confidence, "9", value: true %>
+    <%= label :confidence, "Medium", value: true %>
+    <%= form.radio_button :confidence, 9, checked: true, value: 9 %>
+
+    <%= label :confidence, "Low", value: true %>
     <%= form.radio_button :confidence, 9, checked: true, value: 9 %>
   </p>
 
