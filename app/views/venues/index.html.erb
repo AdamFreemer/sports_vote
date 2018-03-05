@@ -6,9 +6,6 @@
   <thead>
     <tr>
       <th>Name</th>
-
-      <th>Lat</th>
-      <th>Long</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +13,7 @@
   <tbody>
     <% @venues.each do |venue| %>
       <tr>
-        <td><%= venue.name %></td>
-        <td><%= venue.address %></td>
-        <td><%= venue.latitude %></td>
-        <td><%= venue.longitude %></td>
+        <td><%= link_to venue&.name, venue_path(venue) %></td>
         <td><%= link_to 'Show', venue %></td>
         <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
         <td><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
